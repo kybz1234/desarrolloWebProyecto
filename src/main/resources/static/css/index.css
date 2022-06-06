@@ -1,0 +1,136 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 jun. 2022, 20:02:55
+    Author     : Kybz
+*/
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    
+    font-family: heavitas;
+    
+    
+}
+
+
+.container {
+    
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/fondo.png);
+    background-size: contain;
+    background-position: right;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.lateral{
+    
+    background-color: #7F53b0;
+    height: 100vh;
+    width: 40%;
+    box-shadow: 7px 0px 70px #000;
+    
+}
+
+.logo{
+    
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30%;
+    
+    
+}
+
+.login{
+    
+    margin: auto;
+    color: white;
+    padding-left: 30%;
+    padding-right: 30%;
+    
+    
+    
+}
+
+.login h5 {
+    
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+    
+    
+}
+
+.login h4 {
+    margin: 0;
+    height: 40px;
+    font-size: 15px;
+    font-weight: lighter;
+    
+    
+}
+
+
+.campos {
+    
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px; 
+    border: none;
+}
+
+
+.botones {
+    
+    width: 49%;
+    height: 40px;
+    background: #00ffc6;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.login p{
+    
+    height: 40px;
+    text-align: center;
+    
+    
+    
+}
+
+.login a{
+    
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: arial;
+    
+}
+
+.login a:hover {
+    text-decoration: underline;
+    
+    
+}
