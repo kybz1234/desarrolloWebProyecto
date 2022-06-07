@@ -3,9 +3,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
 */
 /* 
-    Created on : 4 jun. 2022, 20:18:06
+    Created on : 7 jun. 2022, 04:04:21
     Author     : Kybz
 */
+
 *{
 
     margin: 0;
@@ -95,57 +96,104 @@ nav a {
     font-weight: bold;
 }
 
-
 .content{
-    margin-left: 100px;
-    margin-right: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    
+    margin: 10%;
 }
 
 .producto{
-    margin: 90px;
-    margin-top: 15px;
-    padding: 2px 16px;
+    
+    
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 #000;   
+    
+}
+
+
+.small-img img{
+    
+    width: 100%; 
+    border: 1px #000;
+    padding: 8px;
+    margin: 10px 10px 15px;
+    cursor: pointer;
+    
+}
+
+.small-img{
+    width: 25%;
+    display: flex;
+}
+
+.img-container img{
+    
+    height: 460px;
+    
+}
+
+.img-container{
+    padding: 10px;
+    width: 45%;
+    display: flex;
+    
+}
+
+
+
+.info h3{
     font-family: sans-serif;
+    text-align: center;
+    
+    
+    
+}
+
+.info a{
+    color: blue;
     font-size: 14px;
+    margin: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+
+.info ul{
+    font-size: 18px;
+    padding-left: 10px;
+    margin: 10px;
+    font-family: sans-serif;
+    
+    
+}
+
+.info h4{
+    
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+    
+}
+
+.compra{
+    
     box-shadow: 0 4px 8px 0 #000;
-
-
+    width: 95%;
+    height: 28%;
+    display: flex;
 }
 
-.producto:hover {
-
-    box-shadow: 0 8px 16px 0 #006666;
-
-}
-
-
-.producto img{
-
-    width: 350px;
-
-}
-
-.producto-boton{
-    width: 40%;
-    height: 25px;
-    margin: 15px;
+.botones{
+   width: 435px;
+    height: 50px;
+    margin-top: 30px;
     background: #A692BD;
     border-color: #B577FC;
     cursor: pointer;
     border-radius: 5px;
-    font-weight: bold;
-
+    font-weight: bold; 
+    align-content: center;
+    
+    
 }
-
-.producto-boton:hover {
-
-    background: #B577FC;
-
-}
-
-
-
