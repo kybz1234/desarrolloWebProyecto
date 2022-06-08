@@ -11,15 +11,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 body {
     
     font-family: sans-serif;
-    
-    
+      
 }
 
 
@@ -49,9 +47,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30%;
-    
-    
+    padding-top: 30%;   
 }
 
 .login{
@@ -59,10 +55,7 @@ body {
     margin: auto;
     color: white;
     padding-left: 30%;
-    padding-right: 30%;
-    
-    
-    
+    padding-right: 30%;    
 }
 
 .login h5 {
@@ -129,6 +122,5 @@ body {
 
 .login a:hover {
     text-decoration: underline;
-    
-    
+       
 }
