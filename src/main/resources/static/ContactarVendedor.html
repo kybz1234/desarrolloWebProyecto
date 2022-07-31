@@ -5,7 +5,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>Carrito de Compras</title>
+        <title>Contactar con el Vendedor</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS only -->
@@ -17,12 +17,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
         <!-- style del css index -->
-        <link rel="stylesheet" href="css/Carrito.css"/>
+        <link rel="stylesheet" href="css/ContactarVendedor.css"/>
     </head>
     <body>
+        
         <nav class="navbar navbar-expand-lg mb-4" style="background-color: #7F53B0">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/LOGO.png" alt="" width="50" height="50">
 
                 </a>
@@ -30,17 +31,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="Ofertas.html">Ofertas</a>
+                            <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">login</a>
+                            <a class="nav-link" href="#">login</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Mi Cuenta
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="HistorialDePedidos.html">Historial de pedidos</a></li>
+                                <li><a class="dropdown-item" href="#">Historial de pedidos</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="MiPerfil.html">Mi perfil</a></li>
                             </ul>
@@ -53,7 +54,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                 </div>
 
-                <a class="navbar-car ml-10" href="Carrito.html">
+                <a class="navbar-car ml-10" href="#">
                     <img src="images/carro-de-la-carretilla.png" alt="" width="50" height="50">
 
                 </a>
@@ -66,41 +67,36 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <div class="container">
 
             <div class="row bg-light">
+                
+                <div class="header">
+                   <div class="col-md-8 offset-md-2 py-2">
 
-                <div class="col-md-8 offset-md-2 py-5">
+                    <h3 class='text-center'>Vendedor</h3>
 
-                    <div class="col-8 py-5">
-
-
-
-                    </div>
-
-                    <div class="col-4">
-
-                        <div class="form-group row">
-
-                            <label for="direccion" class="col-4 m-2">Direccion:</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-                        </div>
-
-                        <div class="form-group text-center py-3">
-
-                            <button class="btn btn-danger">Realizar compra</button>
-
-
-                        </div>
-
-
-                    </div>
-
-
-
+                </div> 
+                    
+                </div>
+                
+                <div class="body">
+                    
+                    <p class="mensaje">Buenas</p>
+                    <p class="mensaje mensaje-usuario">hola</p>
+                    
+                </div>
+                
+                <div class="footer">
+                    <form>
+                        
+                        <input type="text" class='form-control' value='escriba su mensaje'>
+                        <button class="btn">enviar</button>
+                        
+                    </form>
+                    
                 </div>
 
             </div>
-
+            
         </div>
-
+        
     </body>
 </html>

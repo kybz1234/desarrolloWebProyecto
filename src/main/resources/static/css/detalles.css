@@ -1,0 +1,21 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 14 jul. 2022, 05:10:36
+    Author     : Kybz
+*/
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    
+    
+}
+
+.dropdown-item:hover{
+    
+    background-color: #DDC2FC;
+    
+}

@@ -3,7 +3,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
 */
 /* 
-    Created on : 4 jun. 2022, 20:02:55
+    Created on : 29 jul. 2022, 16:44:14
     Author     : Kybz
 */
 
@@ -27,10 +27,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 
 
-.login img{
+.register img{
 
-    border-bottom-left-radius:30px;
-    border-top-left-radius:30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius:  30px;
 
 }
 
@@ -41,7 +41,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 }
 
-.login h1{
+.register h1{
 
     font-size: 2rem;
     font-weight: 700;
@@ -105,3 +105,4 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     text-decoration: underline;
     
 }
+

@@ -3,7 +3,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
 */
 /* 
-    Created on : 4 jun. 2022, 20:02:55
+    Created on : 30 jul. 2022, 21:50:16
     Author     : Kybz
 */
 
@@ -13,63 +13,45 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
+    
 }
 
-.row{
+.bg-light{
+    
     background: white;
     border-radius: 30px;
     box-shadow: 12px 12px 22px;
     margin-bottom: 109px;
     margin-top: 109px;
-
-
-}
-
-
-
-.login img{
-
-    border-bottom-left-radius:30px;
-    border-top-left-radius:30px;
-
-}
-
-.Logo{
-
-    width: 100px;
-    height: 100px;
-
-}
-
-.login h1{
-
-    font-size: 2rem;
-    font-weight: 700;
-
-}
-
-.inp{
-    height: 50px;
-    width: 70%;
-    border: none;
-    outline: none;
-    border-radius: 60px;
     box-shadow: 0px 0px 16px -4px rgba(0,0,0,1);
     -webkit-box-shadow: 0px 0px 16px -4px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 16px -4px rgba(0,0,0,1);
+    
+}
 
+.form-control{
+    
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    flex: 1;
+    margin: 5px;
+    box-shadow: 0px 0px 16px -4px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 16px -4px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 16px -4px rgba(0,0,0,1);
 }
 
 .btn{
     
-    height: 50px;
-    width: 50%;
+    
     border: none;
     outline: none;
-    border-radius: 60px;
-    font-weight: 700;
+    border-radius: 10px;
+    font-weight: 300;
     background-color: #7F53B0;
     color: white;
+    margin: 5px;
     
 }
 
@@ -86,22 +68,40 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     color: white;
 }
 
-.dropdown-item:hover{
+.header{
     
-    background-color: #DDC2FC;
-    
-}
-
-.link{
-    
-    text-decoration: none;
-    color: grey;
+    background-color: #7F53B0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     
 }
 
-.link:hover{
-    
-    color: grey;
-    text-decoration: underline;
+.body{
+    flex: 1;
+    padding: 20px 30px; 
     
 }
+
+.mensaje{
+    
+     background-color: #4DFFD8;
+     padding: 10px;
+     width: fit-content;
+     border-radius: 10px;
+     margin-bottom: 15px;
+    
+}
+
+.mensaje-usuario{
+    margin-left: auto;
+    background-color: #B577FC;
+    margin-bottom: 400px;
+    
+    
+}
+
+.footer form{
+    display: flex;
+    
+}
+
