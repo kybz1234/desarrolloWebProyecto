@@ -3,7 +3,10 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns="http://www.w3.org/1999/xhtml"
+    >
     <head>
         <title>Registro Usuario</title>
         <!-- CSS only -->
@@ -44,13 +47,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         <h1 class="animate__animated animate__fadeInDown animate__fast" >Registrarse como cliente</h1>
 
 
-                        <form class="needs-validation" novalidate>
+                        <form th:action="@{/guardarUsuario}" method="post" th:object="${usuario}" class="needs-validation" novalidate>
 
                             <div class="form-row py-3 pt-5">
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="text" class="inp px-3" id="nameid" placeholder="Nombre" required>
+                                    <input type="text" name="nombre" class="inp px-3" id="nombreid" placeholder="Nombre" th:field="*{nombre}" required>
 
                                     <div class="valid-tooltip">
 
@@ -70,7 +73,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="text" class="inp px-3" id ="surnameid" placeholder="Apellido" required>
+                                    <input type="text" name="apellido" class="inp px-3" id ="apelidoid" placeholder="Apellido" th:field="*{apellido}" required>
 
                                     <div class="valid-tooltip">
 
@@ -91,7 +94,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="text" class="inp px-3" id="emailid" placeholder="Correo" required>
+                                    <input type="text" name="correo" class="inp px-3" id="correoid" placeholder="Correo" th:field="*{correo}" required>
 
                                     <div class="valid-tooltip">
 
@@ -112,7 +115,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="password" class="inp px-3" id="passwordid" placeholder="Contraseña" required>
+                                    <input type="password" name="password" class="inp px-3" id="passwordid" placeholder="Contraseña" th:field="*{password}" required>
 
                                     <div class="valid-tooltip">
 
@@ -156,7 +159,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10">
 
-                                    <button type="submit" class="btn">Registrarse</button>
+                                    <button type="submit" name="guardar" value="guardar" class="btn">Registrarse</button>
 
 
                                 </div>
