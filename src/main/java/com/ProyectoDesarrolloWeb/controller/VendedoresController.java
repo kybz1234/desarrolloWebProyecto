@@ -1,41 +1,36 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package com.ProyectoDesarrolloWeb.controller;
 
-import com.ProyectoDesarrolloWeb.Entity.Usuario;
 import com.ProyectoDesarrolloWeb.Service.UsuarioService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+
+/**
+ *
+ * @author Kybz
+ */
+
 
 @Controller
 @Slf4j
-public class UsuarioController {
+
+public class VendedoresController {
+    
     @Autowired
     private UsuarioService usuarioService;
     
     @GetMapping("/")
     public String inicio(Model model) {
-        log.info("usuarios controller");
+        log.info("Vendedores controller");
         var usuarios = usuarioService.gUsuarios();
         model.addAttribute("usuarios",usuarios);
         return "index";
-    }
-    
-    @GetMapping("/nuevoUsuario")
-    public String nuevoUsuario (Usuario usuario){
-        
-        return"UserRegister";
-        
-    }
-    
-    @PostMapping("/guardarUsuario")
-    public String guardarUsuario(Usuario usuario){
-        
-        usuarioService.save(usuario);
-        return "redirect:/";
-        
     }
     
 }
