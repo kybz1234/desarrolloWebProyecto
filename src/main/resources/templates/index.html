@@ -42,15 +42,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                                 <div class='col-lg-7 text-center py-5'>
 
                                                     <img src="./images/LOGO.png" class="Logo animate__animated animate__fadeInDown animate__fast"alt="alt"/>
-                                                    <h1 class="animate__animated animate__fadeInDown animate__fast" >Iniciar Sesion</h1>
+                                                    <h1 class="animate__animated animate__fadeInDown animate__fast" th:text="#{index.iniciar}" ></h1>
 
-                                                    <form class="needs-validation" novalidate="">
+                                                    <form method="POST" th:action="@{/login}" class="needs-validation" novalidate="">
 
                                                         <div class="form-row py-3 pt-5">
 
                                                             <div class="offset-1 col-lg-10 position-relative">
 
-                                                                <input type="text" class="inp px-3" id="emailid" placeholder="correo" required>
+                                                                <input type="text" class="inp px-3" name="username" id="username" th:placeholder="#{index.username}" required>
                                                                     <div class="valid-tooltip">
 
                                                                         Todo Correcto
@@ -69,7 +69,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                                             <div class="offset-1 col-lg-10 position-relative">
 
-                                                                <input type="password" class="inp px-3" id="passwordid" placeholder="contraseña" required>
+                                                                <input type="password" class="inp px-3" name="password" id="password" th:placeholder="#{index.password}" required>
                                                                     <div class="valid-tooltip">
 
                                                                         Todo Correcto
@@ -98,7 +98,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                                             <div class="offset-1 col-lg-10">
 
-                                                                <a href="home.html" class="btn">Iniciar Sesion</a>
+                                                                <button type="submit" value="Login" class="btn" th:text="#{index.login}" ></button>
 
 
                                                             </div>
@@ -111,12 +111,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                                             <div class="offset-1 col-lg-10">
 
-                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                    Registrarse
+                                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" th:text="#{index.register}" >
                                                                 </button>
                                                                 <ul class="dropdown-menu">
-                                                                    <li><a class="dropdown-item" th:href="@{/nuevoUsuario}">Registrarse como cliente</a></li>
-                                                                    <li><a class="dropdown-item" th:href="@{/nuevoVendedor}">Registrarse como vendedor</a></li>
+                                                                    <li><a class="dropdown-item" th:text="#{index.usuarioRegistro}" th:href="@{/nuevoUsuario}">Registrarse como cliente</a></li>
+                                                                    <li><a class="dropdown-item" th:text="#{index.vendedorRegistro}" th:href="@{/nuevoVendedor}">Registrarse como vendedor</a></li>
                                                                 </ul>
 
                                                             </div>
@@ -130,8 +129,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                             </div>
 
-                                            
-                                            
+
+
                                         </div>
 
 

@@ -48,7 +48,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         <h1 class="animate__animated animate__fadeInDown animate__fast" >Registrarse como vendedor</h1>
 
 
-                        <form th:action="@{/nuevoVendedor}" method="post" th:object="${vendedores}" class="needs-validation" novalidate>
+                        <form th:action="@{/guardarVendedor}" method="post" th:object="${vendedores}" class="needs-validation" novalidate>
 
                             <div class="form-row py-3 pt-5">
 
@@ -75,7 +75,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="text" class="inp px-3" id ="vapellidoid" placeholder="Apellido" th:field="*{apellidos}" required>
+                                    <input type="text" class="inp px-3" id ="vapellidoid" placeholder="Apellido" th:field="*{apellido}" required>
 
                                     <div class="valid-tooltip">
 

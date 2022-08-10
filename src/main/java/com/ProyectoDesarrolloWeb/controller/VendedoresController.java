@@ -27,7 +27,7 @@ public class VendedoresController {
     @Autowired
     private VendedoresService vendedoresService;
     
-    @GetMapping("/listaVendedores")
+    @GetMapping("/SellerRegister")
     public String inicio(Model model) {
         log.info("vendedores controller");
         var vendedores = vendedoresService.getVendedores();
@@ -38,14 +38,14 @@ public class VendedoresController {
     @GetMapping("/nuevoVendedor")
     public String nuevoVendedor (Vendedores vendedores){
         
-        return"sellerRegister";
+        return"SellerRegister";
     }
     
     @PostMapping("/guardarVendedor")
     public String guardarVendedor(Vendedores vendedores){
         
         vendedoresService.save(vendedores);
-        return "redirect:/";
+        return "redirect:/SellerRegister";
     }
     
 }

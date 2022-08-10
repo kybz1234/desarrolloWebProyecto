@@ -18,7 +18,7 @@ public class Vendedores implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idVendedor;
-    private String nombre, apellidos, correo, password, nombreTienda, descTienda;
+    private String nombre, apellido, correo, password, nombreTienda, descTienda;
 
     
     public Vendedores() {
@@ -26,10 +26,10 @@ public class Vendedores implements Serializable {
     
     
 
-    public Vendedores(Long idVendedor, String nombre, String apellidos, String correo, String password, String nombreTienda, String descTienda) {
+    public Vendedores(Long idVendedor, String nombre, String apellido, String correo, String password, String nombreTienda, String descTienda) {
         this.idVendedor = idVendedor;
         this.nombre = nombre;
-        this.apellidos = apellidos;
+        this.apellido = apellido;
         this.correo = correo;
         this.password = password;
         this.nombreTienda = nombreTienda;
