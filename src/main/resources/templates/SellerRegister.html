@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
 <html
     xmlns:th="http://www.thymeleaf.org"
     xmlns="http://www.w3.org/1999/xhtml"
-    
     >
     <head>
         <title>Registro Usuario</title>
@@ -20,228 +15,120 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
         <!-- animation animatedcss fade in -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
         <!-- style de css -->
         <link rel="stylesheet" href="css/SellerRegister.css"/>
-
         <meta charset="UTF-8">
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-
         <section class="register py-3 bg-light">
-
             <div class="container">
-
                 <div class="row g-0 mb-0">
-
                     <div class="col-lg-5">
-
                         <img src="./images/img-seller-register.png" class="img-fluid" alt=""/>
-
                     </div>
-
                     <div class='col-lg-7 text-center py-5'>
-
-
                         <h1 class="animate__animated animate__fadeInDown animate__fast" >Registrarse como vendedor</h1>
-
-
                         <form th:action="@{/guardarVendedor}" method="post" th:object="${vendedores}" class="needs-validation" novalidate>
-
                             <div class="form-row py-3 pt-5">
-
                                 <div class="offset-1 col-lg-10 position-relative">
-
                                     <input type="text" class="inp px-3" id="vnombreid" th:field="*{nombre}" placeholder="Nombre" required>
-
-                                    <div class="valid-tooltip">
-
-                                        Todo Correcto
-
-                                    </div>
-                                    <div class="invalid-tooltip">
-
-                                        Es necesario digitar el nombre
-
-                                    </div>
+                                        <div class="valid-tooltip">
+                                            Todo Correcto
+                                        </div>
+                                        <div class="invalid-tooltip">
+                                            Es necesario digitar el nombre
+                                        </div>
                                 </div>
-
                             </div>
-
-
                             <div class="form-row py-3 pt-3">
-
                                 <div class="offset-1 col-lg-10 position-relative">
-
                                     <input type="text" class="inp px-3" id ="vapellidoid" placeholder="Apellido" th:field="*{apellido}" required>
-
-                                    <div class="valid-tooltip">
-
-                                        Todo Correcto
-
-                                    </div>
-                                    <div class="invalid-tooltip">
-
-                                        Es necesario digitar el apellido
-
-                                    </div>
-
+                                        <div class="valid-tooltip">
+                                            Todo Correcto
+                                        </div>
+                                        <div class="invalid-tooltip">
+                                            Es necesario digitar el apellido
+                                        </div>
                                 </div>
-
                             </div>
-
                             <div class="form-row py-3 pt-3">
-
                                 <div class="offset-1 col-lg-10 position-relative">
-
                                     <input type="text" class="inp px-3" id="vcorreoid" placeholder="Correo" th:field="*{correo}" required>
-
-                                    <div class="valid-tooltip">
-
-                                        Todo Correcto
-
-                                    </div>
-                                    <div class="invalid-tooltip">
-
-                                        Es necesario digitar el correo
-
-                                    </div>
-
+                                        <div class="valid-tooltip">
+                                            Todo Correcto
+                                        </div>
+                                        <div class="invalid-tooltip">
+                                            Es necesario digitar el correo
+                                        </div>
                                 </div>
-
                             </div>
-
                             <div class="form-row py-3">
-
                                 <div class="offset-1 col-lg-10 position-relative">
-
                                     <input type="password" class="inp px-3" id="vpasswordid" placeholder="Contraseña" th:field="*{password}" required>
-
-                                    <div class="valid-tooltip">
-
-                                        Todo Correcto
-
-                                    </div>
-                                    <div class="invalid-tooltip">
-
-                                        Es necesario digitar una contraseña
-
-                                    </div>
-
+                                        <div class="valid-tooltip">
+                                            Todo Correcto
+                                        </div>
+                                        <div class="invalid-tooltip">
+                                            Es necesario digitar una contraseña
+                                        </div>
                                 </div>
-
-
                             </div>
-
                             <div class="form-row py-3 pt-3">
-
                                 <div class="offset-1 col-lg-10 position-relative">
-
                                     <input type="text" class="inp px-3" id="vtiendaid" placeholder="Nombre de la tienda" th:field="*{nombreTienda}" required>
-
-                                    <div class="valid-tooltip">
-
-                                        Todo Correcto
-
-                                    </div>
-                                    <div class="invalid-tooltip">
-
-                                        Es necesario digitar el Nombre de la tienda
-
-                                    </div>
-
+                                        <div class="valid-tooltip">
+                                            Todo Correcto
+                                        </div>
+                                        <div class="invalid-tooltip">
+                                            Es necesario digitar el Nombre de la tienda
+                                        </div>
                                 </div>
-
                             </div>
-
                             <div class="form-row py-3 pt-3">
-
                                 <div class="offset-1 col-lg-10 position-relative">
-
                                     <input type="text" class="inp px-3" id="vdescTiendaId" placeholder="descricion de la tienda" th:field="*{descTienda}" required>
-
-                                    <div class="valid-tooltip">
-
-                                        Todo Correcto
-
-                                    </div>
-                                    <div class="invalid-tooltip">
-
-                                        Es necesario digitar una descripcion de la tienda
-
-                                    </div>
-
+                                        <div class="valid-tooltip">
+                                            Todo Correcto
+                                        </div>
+                                        <div class="invalid-tooltip">
+                                            Es necesario digitar una descripcion de la tienda
+                                        </div>
                                 </div>
-
                             </div>
-
                             <div class="form-row py-3">
-
                                 <div class="offset-1 col-lg-10 position-relative">
-
                                     <input class="form-check-input" type="checkbox" id="terms" required>
                                         acepto los<a class="link" href="Terminos&Condiciones.html"> terminos y condiciones</a>
-
-                                    <div class="valid-tooltip">
-
-                                        Todo Correcto
-
-                                    </div>
-                                    <div class="invalid-tooltip">
-
-                                        Es necesario aceptar los terminos y condiciones
-
-                                    </div>
+                                        <div class="valid-tooltip">
+                                            Todo Correcto
+                                        </div>
+                                        <div class="invalid-tooltip">
+                                            Es necesario aceptar los terminos y condiciones
+                                        </div>
                                 </div>
-
                             </div>
-
-
                             <div class="form-row py-2">
-
                                 <div class="offset-1 col-lg-10">
-
                                     <button type="submit" name="guardar" value="guardar" class="btn">Registrarse</button>
-
-
                                 </div>
-
                             </div>
-
                             <div class="form-row py-2">
-
                                 <div class="offset-1 col-lg-10">
-
                                     <a class="btn py-2" href="index.html" role="button" >volver al inicio de sesion</a>
-
-
                                 </div>
-
                             </div>
-
                         </form>
-
-
                     </div>
-
                 </div>
-
             </div>
-
-
         </section>
-
         <script>
-
             // Example starter JavaScript for disabling form submissions if there are invalid fields
             (() => {
                 'use strict'
-
                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
                 const forms = document.querySelectorAll('.needs-validation')
-
                 // Loop over them and prevent submission
                 Array.from(forms).forEach(form => {
                     form.addEventListener('submit', event => {
@@ -249,15 +136,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                             event.preventDefault()
                             event.stopPropagation()
                         }
-
                         form.classList.add('was-validated')
                     }, false)
                 })
             })()
-
         </script>
-
         <footer th:replace="templates/template::footer"></footer>
-
     </body>
 </html>

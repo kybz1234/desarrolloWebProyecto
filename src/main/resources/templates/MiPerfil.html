@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
 <html>
     <head>
         <title>Mi Perfil</title>
@@ -19,15 +15,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <!-- style del css index -->
         <link rel="stylesheet" href="css/MiPerfil.css"/>
     </head>
-
     <body>
         <nav class="navbar navbar-expand-lg mb-4" style="background-color: #7F53B0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="home.html">
                     <img src="images/LOGO.png" alt="" width="50" height="50">
-
                 </a>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -46,30 +39,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                 <li><a class="dropdown-item" href="MiPerfil.html">Mi perfil</a></li>
                             </ul>
                         </li>
-
                     </ul>
-
-
-
-
                 </div>
-
                 <a class="navbar-car ml-10" href="Carrito.html">
                     <img src="images/carro-de-la-carretilla.png" alt="" width="50" height="50">
-
                 </a>
-
-
-
             </div>
         </nav><!-- fin de la navbar -->
-
         <div class="container">
-
             <div class="row bg-light">
-
                 <div class="col-md-8 offset-md-2 py-5">
-
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" 
@@ -82,119 +61,61 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-
                             <div class="row">
-
                                 <div class="col-4 py-5">
-
                                     <img src="images/user.png" alt="" class="img-fluid"/>
-
                                 </div>
-
                                 <div class="col-8 py-5">
-
                                     <div class="form-group row py-3">
-
                                         <label for="id" class="col-2">ID:</label>
                                         <div class="col-8">
-
                                             <input type="text" class='form-control' value='#'>
                                         </div>
-
-
                                     </div>
-
                                     <div class="form-group row py-3">
-
                                         <label for="nombre" class="col-2">Nombre:</label>
                                         <div class="col-8">
-
                                             <input type="text" class='form-control' value='#'>
                                         </div>
-
-
                                     </div>
-
                                     <div class="form-group row py-3">
-
                                         <label for="apellido" class="col-2">Apellido:</label>
                                         <div class="col-8">
-
                                             <input type="text" class='form-control' value='#'>
                                         </div>
-
-
                                     </div>
-
                                     <div class="form-group row py-3">
-
                                         <label for="correo" class="col-2">Correo:</label>
                                         <div class="col-8">
-
                                             <input type="text" class='form-control' value='#'>
                                         </div>
-
-
                                     </div>
-
                                     <div class="form-group text-center py-3">
-
                                         <button class="btn btn-info">Modifcar</button>
-
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
                         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-
                             <div class='col-8 offset-2 py-3'>
-
                                 <h3 class='text-center'>Modificar Direccion</h3>
-
                                 <div class="form-group row py-3">
-
                                     <label for="id" class="col-4 m-2">ID:</label>
-
-
                                     <input type="text" class='form-control' value='#'>
-
-
-
                                 </div>
-
                                 <div class="form-group row py-3">
-
                                     <label for="direccion" class="col-4 m-2">Direccion:</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-
                                 </div>
-
                                 <div class="form-group text-center py-3">
-
                                     <button class="btn btn-danger">Modifcar</button>
-
-
                                 </div>
-
                             </div>
-
-
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
-
-
         <footer th:replace="templates/template::footer"></footer>
-
     </body>
 </html>

@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html xmlns:th="http://www.thymeleaf.org">
     <head th:fragment="head"> <!-- agregar para llamar en otro html -->
         <title>Mi Tienda</title>
@@ -13,7 +8,6 @@ and open the template in the editor.
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </head>
     <body>
-
         <!-- FOOTER -->
         <!-- <footer th:replace="Plantilla/template::footer"></footer>>  -->
         <footer th:fragment="footer" class="bg-dark text-white fixed-botton">
@@ -24,16 +18,12 @@ and open the template in the editor.
                 <a th:with="urlBuilder=${T(org.springframework.web.servlet.support.ServletUriComponentsBuilder).fromCurrentRequest()}"
                    th:href="${urlBuilder.replaceQueryParam('lang','en').toUriString()}">EN</a>
                 -->
-                
                 <p>&COPY; [[]#{template.derechos}] 
                     <a th:href="@{/(lang=es)}">ES</a> |
                     <a th:href="@{/(lang=en)}">EN</a> |
-                
                 </p>
-
                 <form method="POST" th:action="@{/logout}" style="display: inline" >
                     <a href="#" onclick="this.parentNode.submit();">Logout</a>
-
                 </form>
             </div>
         </footer>
