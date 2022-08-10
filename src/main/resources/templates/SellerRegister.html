@@ -3,7 +3,11 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html>
+<html
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns="http://www.w3.org/1999/xhtml"
+    
+    >
     <head>
         <title>Registro Usuario</title>
         <!-- CSS only -->
@@ -44,13 +48,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         <h1 class="animate__animated animate__fadeInDown animate__fast" >Registrarse como vendedor</h1>
 
 
-                        <form class="needs-validation" novalidate>
+                        <form th:action="@{/nuevoVendedor}" method="post" th:object="${vendedores}" class="needs-validation" novalidate>
 
                             <div class="form-row py-3 pt-5">
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="text" class="inp px-3" id="nameid" placeholder="Nombre" required>
+                                    <input type="text" class="inp px-3" id="vnombreid" th:field="*{nombre}" placeholder="Nombre" required>
 
                                     <div class="valid-tooltip">
 
@@ -71,7 +75,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="text" class="inp px-3" id ="surnameid" placeholder="Apellido" required>
+                                    <input type="text" class="inp px-3" id ="vapellidoid" placeholder="Apellido" th:field="*{apellidos}" required>
 
                                     <div class="valid-tooltip">
 
@@ -92,7 +96,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="text" class="inp px-3" id="emailid" placeholder="Correo" required>
+                                    <input type="text" class="inp px-3" id="vcorreoid" placeholder="Correo" th:field="*{correo}" required>
 
                                     <div class="valid-tooltip">
 
@@ -113,7 +117,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="password" class="inp px-3" id="passwordid" placeholder="Contraseña" required>
+                                    <input type="password" class="inp px-3" id="vpasswordid" placeholder="Contraseña" th:field="*{password}" required>
 
                                     <div class="valid-tooltip">
 
@@ -135,7 +139,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="text" class="inp px-3" id="shopid" placeholder="Nombre de la tienda" required>
+                                    <input type="text" class="inp px-3" id="vtiendaid" placeholder="Nombre de la tienda" th:field="*{nombreTienda}" required>
 
                                     <div class="valid-tooltip">
 
@@ -156,7 +160,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10 position-relative">
 
-                                    <input type="text" class="inp px-3" id="DeShopId" placeholder="descricion de la tienda" required>
+                                    <input type="text" class="inp px-3" id="vdescTiendaId" placeholder="descricion de la tienda" th:field="*{descTienda}" required>
 
                                     <div class="valid-tooltip">
 
@@ -178,7 +182,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                 <div class="offset-1 col-lg-10 position-relative">
 
                                     <input class="form-check-input" type="checkbox" id="terms" required>
-                                    acepto los<a class="link" href="#"> terminos y condiciones</a>
+                                        acepto los<a class="link" href="Terminos&Condiciones.html"> terminos y condiciones</a>
 
                                     <div class="valid-tooltip">
 
@@ -199,7 +203,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                                 <div class="offset-1 col-lg-10">
 
-                                    <button type="submit" class="btn">Registrarse</button>
+                                    <button type="submit" name="guardar" value="guardar" class="btn">Registrarse</button>
 
 
                                 </div>

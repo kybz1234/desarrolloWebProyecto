@@ -44,8 +44,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                                 <div class='col-lg-7 text-center py-5'>
 
 
-                                                    <h1 class="animate__animated animate__fadeInDown animate__fast" > th:text="#{registro.cliente}" </h1>
-                                                    <h1 th:text="#{registro.cliente}"></h1> <!-- agregar -->
+                                                    <h1 class="animate__animated animate__fadeInDown animate__fast" th:text="#{registro.cliente}" ></h1>
+                                                    
 
                                                     <form th:action="@{/guardarUsuario}" method="post" th:object="${usuario}" class="needs-validation" novalidate>
 

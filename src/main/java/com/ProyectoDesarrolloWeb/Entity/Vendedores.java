@@ -19,5 +19,23 @@ public class Vendedores implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idVendedor;
     private String nombre, apellidos, correo, password, nombreTienda, descTienda;
+
+    
+    public Vendedores() {
+    }
+    
+    
+
+    public Vendedores(Long idVendedor, String nombre, String apellidos, String correo, String password, String nombreTienda, String descTienda) {
+        this.idVendedor = idVendedor;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.correo = correo;
+        this.password = password;
+        this.nombreTienda = nombreTienda;
+        this.descTienda = descTienda;
+    }
+    
+    
     
 }
