@@ -29,7 +29,7 @@
                     <div class='col-lg-7 text-center py-5'>
                         <img src="./images/LOGO.png" class="Logo animate__animated animate__fadeInDown animate__fast"alt="alt"/>
                         <h1 class="animate__animated animate__fadeInDown animate__fast" th:text="#{index.iniciar}" ></h1>
-                        <form method="POST" th:action="@{/login}" class="needs-validation" novalidate="">
+                        <form method="POST" th:action="@{/index}" class="needs-validation" novalidate="">
                             <div class="form-row py-3 pt-5">
                                 <div class="offset-1 col-lg-10 position-relative">
                                     <input type="text" class="inp px-3" name="username" id="username" th:placeholder="#{index.username}" required>

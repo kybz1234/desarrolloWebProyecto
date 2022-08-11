@@ -8,12 +8,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @Configuration
 @EnableWebSecurity
-
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-
         auth.inMemoryAuthentication()
                 .withUser("juan")
                 .password("{noop}123")
@@ -29,28 +27,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
-//    @Override
-//    protected void configure(HttpSecurity http) throws Exception {
-//
-//        http.authorizeRequests()
-//                .antMatchers("/producto/nuevo", "/producto/guardar",
-//                        "/producto/modificar/**", "/producto/eliminar/**",
-//                        "/vendedor/nuevo", "/vendedor/guardar",
-//                        "/vendedor/modificar/**", "/vendedor/eliminar/**",
-//                        "/usuario/listado", "/usuario/guardar",
-//                        "/usuario/modificar/**", "/usuario/eliminar/**")
-//                    .hasRole("ADMIN")
-//                .antMatchers("/producto/listado", "/producto/nuevo",
-//                        "/producto/modificar", "/producto/eliminar")
-//                    .hasAnyRole("ADMIN", "VENDEDOR")
-//                .antMatchers("/")
-//                    .hasAnyRole("USER", "VENDEDOR", "ADMIN")
-//                .and()
-//                    .formLogin()
-//                    .loginPage("/login")
-//                .and()
-//                    .exceptionHandling().accessDeniedPage("/errores/403");
-//
-//    }
-
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.authorizeRequests()
+                .antMatchers("/producto/nuevo", "/producto/guardar",
+                        "/producto/modificar/**", "/producto/eliminar/**",
+                        "/vendedor/nuevo", "/vendedor/guardar",
+                        "/vendedor/modificar/**", "/vendedor/eliminar/**",
+                        "/usuario/listado", "/usuario/guardar",
+                        "/usuario/modificar/**", "/usuario/eliminar/**")
+                    .hasRole("ADMIN")
+                .antMatchers("/producto/listado", "/producto/nuevo",
+                        "/producto/modificar", "/producto/eliminar")
+                    .hasAnyRole("ADMIN", "VENDEDOR")
+                .antMatchers("/")
+                    .hasAnyRole("USER", "VENDEDOR", "ADMIN")
+                .and()
+                    .formLogin()
+                    .loginPage("/index")
+                .and()
+                    .exceptionHandling().accessDeniedPage("/Errores/403");
+    }
 }
